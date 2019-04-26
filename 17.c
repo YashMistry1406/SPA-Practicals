@@ -23,13 +23,13 @@ main()
     }
     for(i=0; i<n; i++)
     {
-        for(j=0; j<n-i; j++)
+        for(j=0; j<n-1; j++)
         {
-            if(p[i].avg<p[i+1].avg)
+            if(p[j].avg<p[j+1].avg)
             {
-                temp= p[i];
-                p[i]= p[i+1];
-                p[i+1]= temp;
+                temp= p[j];
+                p[j]= p[j+1];
+                p[j+1]= temp;
             }
         }
     }
